@@ -62,7 +62,7 @@ class UserController:
                 }), 400
             
             # Validação de campos obrigatórios
-            required_fields = ['name', 'email']
+            required_fields = ['name', 'email','phone']
             for field in required_fields:
                 if field not in data or not data[field]:
                     return jsonify({
