@@ -48,7 +48,7 @@ Antes de começar, você precisa ter instalado:
 1. **Clone o repositório** (se aplicável):
 ```bash
 git clone <url-do-repositorio>
-cd "CRUD USER"
+cd "CRUD-USER"
 ```
 
 2. **Crie um ambiente virtual**:
