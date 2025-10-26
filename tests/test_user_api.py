@@ -84,7 +84,8 @@ class TestUserAPI:
     def test_create_user_invalid_email(self, client):
         user_data = {
             'name': 'Maria Santos',
-            'email': 'email-invalido'
+            'email': 'email-invalido',
+            'phone':'16997113777'
         }
         
         response = client.post(
@@ -102,7 +103,8 @@ class TestUserAPI:
     def test_create_user_duplicate_email(self, client, sample_user):
         user_data = {
             'name': 'Maria Santos',
-            'email': 'joaossamartinos@gmail.com'  # email já existe
+            'email': 'joaossamartinos@gmail.com',  # email já existe
+            'phone':'16997113777'
         }
         
         response = client.post(
